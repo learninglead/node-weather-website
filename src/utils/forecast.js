@@ -18,7 +18,7 @@ const forecast = (country,state,city,callback) => {
       }
     });
     }).on('error', (e) => {
-        callback(e.message,undefined);
+        callback("Something went wrong!",undefined);
     });
   }
 
